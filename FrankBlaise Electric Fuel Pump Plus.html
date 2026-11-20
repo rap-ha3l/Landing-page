@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FrankBlaise Electric Fuel Pump Plus</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#7b2a31;--surface:#5e1c23;--ink:#fff4f1;--muted:#e8cccc;--line:#a65a60;--accent:#f2c230;--btn:#ecebe8;--accent-ink:#4a1218;--dial:#fff4f1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;line-height:1.05;margin:0}
+h1{font-size:clamp(2.6rem,9vw,4.6rem);font-weight:700}
+h2{font-size:clamp(1.9rem,5vw,2.6rem);font-weight:700;margin-bottom:.75rem}
+h3{font-size:1.4rem;font-weight:600;margin-bottom:.25rem}
+p{margin:0 0 1rem;max-width:62ch}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;font-weight:600}
+nav .logo{font-family:"Barlow Condensed",sans-serif;font-size:1.5rem;font-weight:700}
+.btn{display:inline-block;background:var(--btn);color:var(--accent-ink);font:600 1rem Barlow,sans-serif;padding:.85rem 1.4rem;border:0;border-radius:4px;text-decoration:none;cursor:pointer}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hero{display:grid;gap:2rem;padding:2rem 0 3.5rem;align-items:center}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr 1fr}}
+.hero p.lead{font-size:1.15rem;color:var(--muted)}
+.dial{width:100%;max-width:380px;margin:0 auto}
+.needle{transform-origin:150px 150px;transform:rotate(-80deg);animation:sweep 1.6s .2s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes sweep{to{transform:rotate(38deg)}}
+@media(prefers-reduced-motion:reduce){.needle{animation:none;transform:rotate(38deg)}}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+.features{display:grid;gap:1.5rem;margin-top:1.5rem}
+@media(min-width:760px){.features{grid-template-columns:repeat(3,1fr)}}
+.features div{border-left:4px solid var(--accent);padding-left:1rem}
+.features p{color:var(--muted);margin:0}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:320px;background:var(--surface)}
+th,td{text-align:left;padding:.75rem 1rem;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);width:45%}
+form{display:grid;gap:1rem;background:var(--surface);border:1px solid var(--line);padding:1.5rem;border-radius:6px;max-width:640px}
+.row{display:grid;gap:1rem}
+@media(min-width:600px){.row{grid-template-columns:1fr 1fr}}
+label{display:grid;gap:.3rem;font-weight:600;font-size:.95rem}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:.7rem}
+.err{color:#ffc2b8;font-weight:500;font-size:.9rem;min-height:1.2em}
+#thanks{display:none;background:var(--surface);border:1px solid var(--accent);border-radius:6px;padding:1.5rem;max-width:640px}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><span class="logo">FrankBlaise Parts</span><a href="#enquire" class="btn">Get a quote</a></nav>
+
+<header class="hero">
+<div>
+<h1>Steady fuel delivery. Every start.</h1>
+<p class="lead">The Electric Fuel Pump Plus is an in-tank electric pump built to keep fuel flowing steadily, from cold start to full load.</p>
+<a href="#enquire" class="btn">Request pricing</a>
+</div>
+<svg class="dial" viewBox="0 0 300 190" role="img" aria-label="Pressure dial reading 58 psi">
+<path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="var(--line)" stroke-width="16" stroke-linecap="round"/>
+<path d="M30 150 A120 120 0 0 1 218 52" fill="none" stroke="var(--accent)" stroke-width="16" stroke-linecap="round"/>
+<g class="needle"><line x1="150" y1="150" x2="150" y2="48" stroke="var(--dial)" stroke-width="5" stroke-linecap="round"/></g>
+<circle cx="150" cy="150" r="10" fill="var(--dial)"/>
+<text x="150" y="182" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="30" font-weight="700" fill="var(--ink)">58 psi</text>
+</svg>
+</header>
+
+<section id="about">
+<h2>Why drivers and workshops pick the Fuel Pump Plus</h2>
+<div class="features">
+<div><h3>Consistent pressure</h3><p>A built-in regulator holds 58 psi, so the engine gets the same fuel supply at idle and at speed.</p></div>
+<div><h3>Quiet running</h3><p>Rubber-mounted motor and a sealed housing keep pump noise out of the cabin.</p></div>
+<div><h3>Fits in minutes</h3><p>Universal in-tank design with a fitting kit, filter sock and wiring harness included.</p></div>
+</div>
+</section>
+
+<section id="specs">
+<h2>Specifications</h2>
+<p>Sample values for demonstration. Final specs to be confirmed.</p>
+<div class="scroll"><table>
+<tr><th>Flow rate</th><td>255 litres per hour</td></tr>
+<tr><th>Operating pressure</th><td>58 psi (4 bar)</td></tr>
+<tr><th>Voltage</th><td>12V DC</td></tr>
+<tr><th>Current draw</th><td>6.5 A at rated load</td></tr>
+<tr><th>Fuel type</th><td>Petrol, up to E10</td></tr>
+<tr><th>Installation</th><td>In-tank</td></tr>
+<tr><th>In the box</th><td>Pump, filter sock, fitting kit, wiring harness</td></tr>
+<tr><th>Warranty</th><td>12 months</td></tr>
+</table></div>
+</section>
+
+<section id="enquire">
+<h2>Interested? Tell us about your vehicle</h2>
+<p>Fill in your details and we will reply with price and availability.</p>
+<form id="lead" novalidate>
+<div class="row">
+<label>Full name<input name="name" autocomplete="name" required><span class="err"></span></label>
+<label>Phone number<input name="phone" type="tel" autocomplete="tel" required><span class="err"></span></label>
+</div>
+<label>Email<input name="email" type="email" autocomplete="email" required><span class="err"></span></label>
+<div class="row">
+<label>Vehicle make and model<input name="vehicle" placeholder="e.g. Toyota Corolla 2012"></label>
+<label>Quantity<select name="qty"><option>1</option><option>2–5</option><option>6–20</option><option>20+</option></select></label>
+</div>
+<label>Message (optional)<textarea name="msg" rows="3"></textarea></label>
+<button class="btn" type="submit">Send my details</button>
+</form>
+<div id="thanks" role="status" tabindex="-1"><h3>Details received</h3><p id="thanksText"></p></div>
+</section>
+
+<footer>FrankBlaise Parts. Sample landing page</footer>
+</div>
+
+<script>
+(function(){
+var f=document.getElementById('lead');
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var ok=true;
+function check(n,test,msg){var i=f.elements[n],s=i.parentNode.querySelector('.err');var bad=!test(i.value.trim());s.textContent=bad?msg:'';if(bad)ok=false;}
+check('name',function(v){return v.length>1},'Enter your full name.');
+check('phone',function(v){return /^[+\d][\d\s()-]{6,}$/.test(v)},'Enter a valid phone number.');
+check('email',function(v){return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)},'Enter a valid email address.');
+if(!ok){f.querySelector('.err:not(:empty)').parentNode.querySelector('input').focus();return;}
+var n=f.elements.name.value.trim().split(' ')[0];
+document.getElementById('thanksText').textContent='Thanks, '+n+'. We will contact you on '+f.elements.phone.value.trim()+' with pricing and availability.';
+f.style.display='none';
+var t=document.getElementById('thanks');t.style.display='block';t.focus();
+});
+})();
+</script>
+</body>
+</html>
